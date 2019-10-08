@@ -5,13 +5,9 @@
 
 int main(int argc, char *argv[]) {
 	
-	int i=0, meter;
+	int i;
+	for ( i=0; i<10; i++)
+		printf("HelloWorld!\n");
 	
-	while ( i<3)
-		{
-			meter = i * 1609;
-			printf("%d mile is %dmeter\n", i,meter);
-			i++;
-		}
 	return 0;
 }
