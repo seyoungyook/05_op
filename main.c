@@ -4,19 +4,14 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int input;
 	
-	printf("input a number :");
-	scanf("%d", &input);
+	int i=0, meter;
 	
-	if ( input > 0)
-		printf ("positive\n");
-
-	else if ( input < 0 )
-		printf ("negative\n");
-		
-	else
-		printf ("zero\n");
-		
+	while ( i<3)
+		{
+			meter = i * 1609;
+			printf("%d mile is %dmeter\n", i,meter);
+			i++;
+		}
 	return 0;
 }
