@@ -5,9 +5,19 @@
 
 int main(int argc, char *argv[]) {
 	
-	int i;
-	for ( i=0; i<10; i++)
-		printf("HelloWorld!\n");
+	int num = 0;
+	char C;
 	
+	printf("input a string : ");
+	
+	while ( ( C = getchar()) !='\n')
+	{
+		if ( C <= '9' && C >= '0')
+		{ 
+			num++;
+		}
+	}
+	
+	printf("number is %d", num);
 	return 0;
 }
